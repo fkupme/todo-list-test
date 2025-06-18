@@ -1,0 +1,65 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 16px;
+	line-height: $leading-normal;
+}
+
+body {
+	font-family: $font-family;
+	color: $text-primary;
+	background-color: $background;
+	font-size: $text-base;
+	line-height: $leading-normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+	min-height: 100vh;
+	padding: $spacing-lg;
+
+	@include mobile {
+		padding: $spacing-md;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-weight: $font-semibold;
+	line-height: $leading-tight;
+}
+
+h1 {
+	font-size: $text-2xl;
+}
+
+h2 {
+	font-size: $text-xl;
+}
+
+h3 {
+	font-size: $text-lg;
+}
+
+button {
+	font-family: inherit;
+}
+
+input {
+	font-family: inherit;
+}
+
+ul,
+ol {
+	list-style: none;
+}
